@@ -2,17 +2,18 @@ import java.util.Scanner;
 
 class Product
 {
+	int pcode,price;
+	String pname;
+	
 	Product()
 	{
-		int pcode,price;
-		String pname;
 		Scanner in=new Scanner(System.in);
 		System.out.println("Enter the pcode");
 		pcode=in.nextInt();
-		System.out.println("Enter the pname");
+		System.out.print("Enter the pname");
 		in.skip("[\r\n]+");
 		pname=in.nextLine();
-		System.out.println("Enter the price");
+		System.out.print("Enter the price");
 		in.skip("[\r\n]+");
 		price=in.nextInt();
 	}
